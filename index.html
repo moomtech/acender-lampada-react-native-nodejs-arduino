@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        var socket = io.connect();
+        $("#button-01").click(function(e) {
+          socket.emit("click-01");
+          e.preventDefault();
+        });
+      });
+    </script>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      background: purple;
+      color: white;
+      padding: 16px;
+      border: 0;
+      border-radius: 6px;
+      font-size: 31px;
+      cursor: pointer;
+      margin: 5px;
+    }
+  </style>
+  <body>
+    <button id="button-01" href="#">Button 01</button>
+  </body>
+</html>
