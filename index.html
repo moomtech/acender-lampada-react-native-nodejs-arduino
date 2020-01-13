@@ -4,8 +4,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-        var socket = io.connect();
-        $("#button-01").click(function(e) {
+        const socket = io.connect();
+        $("#button-01").click(e => {
           socket.emit("click-01");
           e.preventDefault();
         });
