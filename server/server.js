@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 board.on("ready", () => {
   const relay = new five.Relay(10);
   io.on("connection", socket => {
-    socket.on("click-01", () => {
+    socket.on("toggleLight", () => {
       relay.toggle();
     });
   });

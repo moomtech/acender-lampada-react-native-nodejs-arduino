@@ -7,8 +7,8 @@
       $(document).ready(() => {
         const socket = io.connect();
 
-        $("#button-01").click(e => {
-          socket.emit("click-01");
+        $("#buttonClick").click(e => {
+          socket.emit("toggleLight");
           e.preventDefault();
         });
       });
@@ -36,6 +36,6 @@
     }
   </style>
   <body>
-    <button id="button-01" href="#">Ligar luz</button>
+    <button id="buttonClick" href="#">Ligar luz</button>
   </body>
 </html>
