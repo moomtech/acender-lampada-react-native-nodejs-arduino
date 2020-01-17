@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
   fs.readFile(__dirname + "/index.html", function(err, data) {
     if (err) {
       res.writeHead(500);
-      return res.end("Error loading index.html");
+      return res.end("Erro ao carregar index.html");
     }
 
     res.writeHead(200);
