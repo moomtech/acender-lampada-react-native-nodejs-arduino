@@ -1,5 +1,5 @@
-<p align="center">
-    <img src="/img/moom.png" height="30" alt="Moom"/>
+<p>
+    <img src="/img/moom.png" height="40" alt="Moom"/>
 </p>
 
 ---
