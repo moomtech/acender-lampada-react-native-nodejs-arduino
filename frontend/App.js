@@ -9,15 +9,13 @@ export default function App() {
 
   function handleChange() {
     setText(!text);
-    socket.emit("click-01");
+    socket.emit("toggleLight");
   }
 
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={handleChange} style={styles.button}>
-        <Text style={styles.textButton}>
-          {text ? "Acender luz" : "Apagar luz"}
-        </Text>
+        <Text style={styles.textButton}>{text ? "On" : "Off"}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -32,13 +30,14 @@ const styles = StyleSheet.create({
   },
 
   button: {
+    backgroundColor: "#000",
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: "#000",
     padding: 14
   },
 
   textButton: {
-    fontSize: 30
+    fontSize: 30,
+    color: "#fff"
   }
 });
