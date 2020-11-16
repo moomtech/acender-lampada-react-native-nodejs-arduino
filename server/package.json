@@ -13,6 +13,7 @@
     "fs": "0.0.1-security",
     "http": "0.0.0",
     "johnny-five": "^1.4.0",
+    "serialport": "^8.0.8",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {

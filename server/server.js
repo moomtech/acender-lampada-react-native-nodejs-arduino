@@ -6,7 +6,7 @@ const five = require("johnny-five");
 const board = new five.Board();
 
 app.get("/", (req, res) => {
-  fs.readFile(__dirname + "/index.html", function(err, data) {
+  fs.readFile(__dirname + "/index.html", function (err, data) {
     if (err) {
       res.writeHead(500);
       return res.end("Erro ao carregar index.html");
@@ -29,3 +29,5 @@ board.on("ready", () => {
 http.listen(3000, () => {
   console.log("Servidor rodando na porta 3000.");
 });
+
+
