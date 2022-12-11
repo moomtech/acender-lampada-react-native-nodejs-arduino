@@ -9,7 +9,7 @@
   "author": "Victor Hermes by Moom",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "http": "0.0.0",
     "johnny-five": "^1.4.0",
